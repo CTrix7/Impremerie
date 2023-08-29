@@ -275,9 +275,41 @@ body {
 }
 
 
+/* Your existing CSS rules here */
+
 /* Media query for responsiveness */
 @media screen and (max-width: 768px) {
-    .localization-section {
-        padding: 30px;
+    .logo {
+        width: 80px;
+    }
+
+    .welcome {
+        font-size: 32px;
+    }
+
+    .welcome2 {
+        font-size: 22px;
+    }
+
+    .localization-section,
+    .info,
+    .Horaire,
+    .contacter {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px;
+    }
+
+    /* Show the navigation menu items in mobile */
+    .menu-bar ul {
+        display: none;
+    }
+
+    .menu-bar.active ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
     }
 }
+
