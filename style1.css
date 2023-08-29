@@ -1,0 +1,156 @@
+:root {
+  --primary-color: yellowgreen;
+  --background-color: rgba(255, 255, 255, 0.8);
+  --text-color: rgb(161, 255, 10); /* Define the text color */
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  overflow: hidden;
+  color: var(--text-color); /* Apply the text color to the body */
+}
+
+.background-container {
+  background-image: url('ground.jpg');
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form-signin {
+  background-color: transparent;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 153, 0, 0.925);
+  max-width: 400px;
+  width: 100%;
+}
+
+.cool-text {
+  font-family: 'Times New Roman', sans-serif;
+  color: var(--text-color); /* Apply the text color */
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.form-control {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  height: 20px;
+  padding: 10px;
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+  margin-bottom: 15px;
+  color: black; /* Apply the text color */
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+}
+.top-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: transparent; 
+  backdrop-filter: blur(10px); 
+  z-index: 1;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin-right: 80px; /* Added margin to the right for spacing */
+}
+
+.menu-bar ul li a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #e48909;
+  text-decoration: none;
+}
+
+.menu-bar ul li a:hover {
+  color: yellowgreen;
+}
+.input-group-text {
+  background: yellowgreen;
+  border: 1px solid yellowgreen; /* Consistent border color */
+  border-radius: 0 20px 20px 0 !important;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  border-radius: 40px;
+  font-weight: bold;
+  transition: background-color 0.2s, color 0.2s;
+  color: rebeccapurple; /* Apply the text color */
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #fff700;
+  color: aquamarine; /* Apply the text color */
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: black; /* Apply the text color */
+  padding: 20px;
+  text-align: center;
+}
