@@ -159,7 +159,7 @@ body {
 .product {
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     width: 100%; 
@@ -169,7 +169,8 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 6px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 .welcome {
     font-family:cursive;
@@ -195,6 +196,7 @@ body {
     font-weight: bold;
     font-size: 30px;
     font-family:cursive;
+    margin-bottom: 10px;
 }
 
 .localization-section {
@@ -283,6 +285,19 @@ body {
 
 
 /* Your existing CSS rules here */
+.multi-column {
+    columns: 3; /* Adjust the number of columns as needed */
+    -webkit-columns: 3;
+    -moz-columns: 3;
+}
+
+/* Adjust styling as needed */
+.multi-column li {
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+
 
 /* Media query for responsiveness */
 @media screen and (max-width: 768px) {
