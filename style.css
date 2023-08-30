@@ -299,6 +299,11 @@ body {
         margin-right: 10px;
         padding: 10px;
     }
+    .localization-section img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
 
     /* Show the navigation menu items in mobile */
     .menu-bar ul {
